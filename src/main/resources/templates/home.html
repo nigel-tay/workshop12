@@ -7,6 +7,13 @@
     <title>IMAGE THINGAMAJIG</title>
 </head>
 <body>
-    <h1>GOOD am bROS and SIS</h1>
+    <h1>How many numbers do YOU WANT????😛</h1>
+    <form action="/get" method="GET">
+        <input type="input" id="number" name="number" placeholder="Type a number between 1-30">
+        <input type="submit" value="GENERATE♻️">
+    </form>
+    <p th:if="${errorMessage != null}" style="color: red;">
+        [[${errorMessage}]]
+    </p>
 </body>
 </html>
